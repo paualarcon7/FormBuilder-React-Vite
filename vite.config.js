@@ -4,7 +4,7 @@ const path = require('path');
 const config = {
   jsx: 'react',
   plugins: [reactPlugin],
-  resolve: {
+  /* resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
       '@mui': '@mui/material',
@@ -12,7 +12,7 @@ const config = {
       '@mui/material': '@mui/material/esm',
       '@mui/styled-components': '@mui/styled-components-sc',
     },
-  },
+  }, */
 };
 
 export default config;
