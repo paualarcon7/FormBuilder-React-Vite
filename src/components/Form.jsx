@@ -33,9 +33,6 @@ export default function Form() {
     
     setFormData(data[0].items);
   }, []);
-  //const countryDefaultValue= formData.find(field => field.type === "select").options[0].label
-
- // console.log(countryDefaultValue);
 
   const [state, setState] = useState({
     full_name: "",
