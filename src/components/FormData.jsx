@@ -16,7 +16,6 @@ export default function FormData() {
     setState([doc]);
   }, []);
 
-  //console.log("im state ", state)
 
   return (
     <React.Fragment>
@@ -28,7 +27,6 @@ export default function FormData() {
           marginTop: "10rem",
         }}
       >
-        {console.log("im state ", state)}
         {state.length
           ? state.map((el) => {
               return (

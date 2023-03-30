@@ -41,8 +41,6 @@ export default function Form() {
     country_of_origin: "Argentina",
     terms_and_conditions: "",
   });
-  
-  console.log(state)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
