@@ -66,7 +66,6 @@ export default function Form() {
       ...state,
       [e.target.name]: e.target.value,
     });
-    console.log("STATE ", state);
   };
 
   return (
