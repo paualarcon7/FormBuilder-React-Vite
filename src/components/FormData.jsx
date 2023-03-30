@@ -16,7 +16,6 @@ export default function FormData() {
     setState([doc]);
   }, []);
 
-
   return (
     <React.Fragment>
       <Flex
@@ -27,48 +26,50 @@ export default function FormData() {
           marginTop: "10rem",
         }}
       >
-        {state.length
-          ? state.map((el) => {
-              return (
-                <Stack
-                  spacing={4}
-                  w="full"
-                  maxW="xl"
-                  bg="white"
-                  p={8}
+        {state.length ? (
+          state.map((el) => {
+            return (
+              <Stack
+                spacing={4}
+                w="full"
+                maxW="xl"
+                bg="white"
+                p={8}
+                borderRadius="10px"
+                backgroundColor="#2aaf8361"
+              >
+                <Box
+                  p={5}
+                  shadow="md"
+                  borderWidth="4px"
+                  borderColor="white"
                   borderRadius="10px"
-                  backgroundColor="#2aaf8361"
+                  color="black"
+                  backgroundColor="whiteAlpha.600"
+                  fontWeight="bold"
                 >
-                  <Box
-                    p={5}
-                    shadow="md"
-                    borderWidth="4px"
-                    borderColor="white"
-                    borderRadius="10px"
-                    color="black"
-                    backgroundColor="whiteAlpha.600"
-                    fontWeight="bold"
-                  >
-                    <Heading fontSize="xl"> Nombre: {el.full_name} </Heading>
-                    <Text mt={4}>Email: {el.email}</Text>
-                    <Text mt={4}>Fecha de nacimiento: {el.birth_date}</Text>
-                    <Text mt={4}>País: {el.country_of_origin}</Text>
-                  </Box>
-                </Stack>
-              );
-            })
-          : <Box
-          p={5}
-          shadow="md"
-          borderWidth="4px"
-          borderColor="white"
-          borderRadius="10px"
-          color="black"
-          backgroundColor="whiteAlpha.600"
-          fontWeight="bold"
-        >
-          <Heading fontSize="xl"> Loading... </Heading>
-        </Box>}
+                  <Heading fontSize="xl"> Nombre: {el.full_name} </Heading>
+                  <Text mt={4}>Email: {el.email}</Text>
+                  <Text mt={4}>Fecha de nacimiento: {el.birth_date}</Text>
+                  <Text mt={4}>País: {el.country_of_origin}</Text>
+                </Box>
+              </Stack>
+            );
+          })
+        ) : (
+          <Box
+            p={5}
+            shadow="md"
+            borderWidth="4px"
+            borderColor="white"
+            borderRadius="10px"
+            color="black"
+            backgroundColor="whiteAlpha.600"
+            fontWeight="bold"
+          >
+            <Heading fontSize="xl"> Loading... </Heading>
+          </Box>
+        )}
       </Flex>
     </React.Fragment>
   );
