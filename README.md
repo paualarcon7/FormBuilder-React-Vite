@@ -14,6 +14,8 @@ Este challenge me fue propuesto por parte de Henry con el objetivo de aprender a
 
 - Por último, traé las respuestas de la base de datos ya mencionada y mostralas en la misma app pero en otra ruta. Al presionar “enviar” en el formulario tiene que aparecer un mensaje y el acceso a esa ruta en donde estarán las respuestas. El diseño y estética queda a libre elección.
 
+ACLARACIONES: utilicé la librería Chakra UI para los estilos, a los cuales también les agregué responsividad. Con respecto a Firebase le agregué timestamps a cada instancia para poder filtrar por último elemento agregado a la colección y así mostrarlo una vez enviado el formulario.
+
 ### archivo JSON
 
 ```json
