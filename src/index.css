@@ -5,9 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./styles/img/notebook.png');
-  background-repeat: no-repeat;
-  background-size:70rem 60rem;
+  background-image: url('https://res.cloudinary.com/djobvomhs/image/upload/v1680190694/FormBuilder/fondoflores_hus9us.jpg');
+  
   
 }
 

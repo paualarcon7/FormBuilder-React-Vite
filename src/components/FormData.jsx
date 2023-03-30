@@ -26,8 +26,6 @@ export default function FormData() {
           flexDirection: "row",
           justifyContent: "space-evenly",
           marginTop: "10rem",
-          float: "left",
-          marginLeft: "26rem"
         }}
       >
         {console.log("im state ", state)}
@@ -50,6 +48,8 @@ export default function FormData() {
                     borderColor="white"
                     borderRadius="10px"
                     color="black"
+                    backgroundColor="whiteAlpha.600"
+                    fontWeight="bold"
                   >
                     <Heading fontSize="xl"> Nombre: {el.full_name} </Heading>
                     <Text mt={4}>Email: {el.email}</Text>

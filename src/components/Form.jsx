@@ -79,14 +79,14 @@ export default function Form() {
       bg="white"
       p={8}
       borderRadius="10px"
-      marginLeft="20rem"
+      marginLeft="40rem"
       marginTop="7rem"
       backgroundColor="#2aaf8361"
     >
-      <Heading fontSize="2xl" textAlign="center">
+      <Heading fontSize="2xl" textAlign="center" background="#2aaf8361" borderRadius="5px">
         Datos Personales
       </Heading>
-      <Text fontSize="md" textAlign="center">
+      <Text fontSize="md" textAlign="center" background="#2aaf8361" fontWeight="bold">
         Completa los siguientes datos
       </Text>
       <form onSubmit={handleSubmit} role="textbox">
