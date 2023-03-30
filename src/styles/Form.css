@@ -17,14 +17,6 @@
     background: #fff;
     border: 1px solid #9c9c9c;
   }
-  Button {
-    background: teal;
-    padding: 0.7em;
-    border: 0;
-  }
-  Button:hover {
-    background: black;
-  }
   
   label {
     text-align: right;

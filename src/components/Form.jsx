@@ -175,7 +175,7 @@ export default function Form() {
               );
             case "submit":
               return (
-                <Button colorScheme="#2aaf8361" mt={4} w="full" type={field.type}>
+                <Button backgroundColor="#2aaf8361" mt={4} w="full" type={field.type}>
                   Enviar
                 </Button>
               );
@@ -185,114 +185,4 @@ export default function Form() {
       </form>
     </Stack>
   );
-
-  {
-    /* <Flex width="full" align="center" justifyContent="center">
-      <Box p={2} style={{marginTop:'10rem'}}>
-      <Box textAlign="center">
-          <Heading color="white">Tus datos</Heading>
-        </Box>
-    <Box p="20px" maxWidth="1000px" borderWidth="1px" borderRadius="8px" boxShadow="dark-lg" width={800} height={600} borderColor='black' background='white' backgroundColor="rgba(255, 255, 255, .5)"
->
-    <form onSubmit={handleSubmit}>
-    <FormControl onSubmit={handleSubmit}>
-      {formData.map((field, index) => {
-        switch (field.type) {
-          case "text":
-            return (
-              <FormLabel>
-                {field.label}
-                <Input
-                  key={index}
-                  variant="outlined"
-                  name={field.name}
-                  required={field.required}
-                  onChange={handleOnChange}
-                  focusBorderColor = "blue"
-                />
-              </FormLabel>
-            );
-          case "email":
-            return (
-              <FormLabel>
-                {field.label}
-                <Input
-                  key={index}
-                  onChange={handleOnChange}
-                  variant="outlined"
-                  name={field.name}
-                  required={field.required}
-                />
-              </FormLabel>
-            );
-          case "date":
-            return (
-              <FormLabel>
-                {field.label}
-                <Input
-                  key={index}
-                  onChange={handleOnChange}
-                  type={field.type}
-                  variant="outlined"
-                  name={field.name}
-                  required={field.required}
-                  
-                />
-              </FormLabel>
-            );
-          case "checkbox":
-            return (
-              <FormLabel width={80} marginTop="50px">
-                {field.label}
-                <Checkbox
-                  key={index}
-                  type={field.type}
-                  name={field.name}
-                  onChange={handleOnChange}
-                  required={field.required}
-                  borderColor='black'
-                  float="right"
-                  left="180px"
-                  bottom="20px"
-                />
-              </FormLabel>
-            );
-          case "select":
-            return (
-              <form key={index} variant="outlined">
-                <FormLabel id={field.name} width={80}>{field.label}</FormLabel>
-                <Select
-                 size='md'
-                  id={field.name}
-                  name={field.name}
-                  value={state.country_of_origin}
-                  onChange={handleOnChange}
-                  label={field.label}
-                  required={field.required}
-                  
-                >
-                  {field.options.map((option, index) => (
-                    <option key={index} value={option.value}>
-                      {option.label}
-                    </option>
-                  ))}
-                </Select>
-              </form>
-            );
-          case "submit":
-            return (
-              <Button color='white' variant='solid' type={field.type} background='#38a3a5' top={50}>
-                {field.label}
-              </Button>
-            );
-          default:
-            return null;
-        }
-      })}
-    </FormControl>
-   </form>
-    </Box>
-    </Box>
-    </Flex> */
-  }
 }
