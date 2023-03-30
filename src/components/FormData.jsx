@@ -59,7 +59,18 @@ export default function FormData() {
                 </Stack>
               );
             })
-          : "Loading..."}
+          : <Box
+          p={5}
+          shadow="md"
+          borderWidth="4px"
+          borderColor="white"
+          borderRadius="10px"
+          color="black"
+          backgroundColor="whiteAlpha.600"
+          fontWeight="bold"
+        >
+          <Heading fontSize="xl"> Loading... </Heading>
+        </Box>}
       </Flex>
     </React.Fragment>
   );
