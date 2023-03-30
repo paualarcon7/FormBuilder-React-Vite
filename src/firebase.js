@@ -3,13 +3,13 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
     
-        apiKey: "AIzaSyAjAwETAIbVVyKXu_vIVdErNbwfvpldOaM",
-        authDomain: "form-builder-6f8a6.firebaseapp.com",
-        projectId: "form-builder-6f8a6",
-        storageBucket: "form-builder-6f8a6.appspot.com",
-        messagingSenderId: "323267201404",
-        appId: "1:323267201404:web:a5f00ffee940c8c4823cf9",
-        measurementId: "G-02PVBWY20Q"
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTH_DOMAIN,
+        projectId: process.env.PROJECT_ID,
+        storageBucket: process.env.STORAGE_BUCKET,
+        messagingSenderId: process.env.MESSAGING_SENDER_ID,
+        appId: process.env.APP_ID,
+        measurementId: process.env.MEASUREMENT_ID
       
 }
 
