@@ -16,6 +16,8 @@ Este challenge me fue propuesto por parte de Henry con el objetivo de aprender a
 
 ACLARACIONES: utilicé la librería Chakra UI para los estilos, a los cuales también les agregué responsividad. Con respecto a Firebase le agregué timestamps a cada instancia para poder filtrar por último elemento agregado a la colección y así mostrarlo una vez enviado el formulario.
 
+DEPLOY: https://form-builder-react-vite-firebase-git-production-paualarcon7.vercel.app/
+
 ### archivo JSON
 
 ```json
